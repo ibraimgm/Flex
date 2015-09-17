@@ -25,7 +25,7 @@
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/datatables.min.js" type="text/javascript"></script>
   {% endif %}
   {%if CSS_OVERRIDE %}
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}{{ CSS_OVERRIDE }}">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ CSS_OVERRIDE }}">
   {% endif %}
 
   <meta charset="utf-8" />
@@ -44,7 +44,7 @@
     <div>
       <a href="{{ SITEURL }}">
         {% if SITELOGO %}
-        <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
+        <img src="{{ SITEURL }}/{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% else %}
         <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% endif %}
