@@ -42,14 +42,14 @@
   {% include "partial/gtm.html" %}
   <aside>
     <div>
-      <a href="{{ SITEURL }}">
+      <a href="{{ SITEURL }}/index.html">
         {% if SITELOGO %}
         <img src="{{ SITEURL }}/{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% else %}
         <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% endif %}
       </a>
-      <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
+      <h1><a href="{{ SITEURL }}/index.html">{{ SITETITLE }}</a></h1>
       <p>{{ SITESUBTITLE }}</p>
       <p style="font-size:0.85em;"><i>{{ SITEPHRASE }}</i></p>
       <nav>
@@ -75,7 +75,7 @@
   <main>
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">Home</a>
+      <a href="{{ SITEURL }}/index.html">Home</a>
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ title }}</a>
       {% endfor %}
