@@ -58,7 +58,7 @@
           <li><a href="{{ SITEURL }}/{{ page.url }}#{{ page.slug }}">{{ page.title }}</a></li>
           {% endfor %}
           {% for name, link in SIDEMENU %}
-          <li><a href="{{ link }}">{{ name }}</a></li>
+          <li><a href="{{SITEURL}}/{{ link }}">{{ name }}</a></li>
           {% endfor %}
           {% for name, link in LINKS %}
           <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
@@ -77,7 +77,7 @@
     <nav>
       <a href="{{ SITEURL }}/index.html">Home</a>
       {% for title, link in MENUITEMS %}
-      <a href="{{ link }}">{{ title }}</a>
+      <a href="{{ SITEURL }}/{{ link }}">{{ title }}</a>
       {% endfor %}
       {% if FEED_ALL_ATOM %}
       <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom</a>
